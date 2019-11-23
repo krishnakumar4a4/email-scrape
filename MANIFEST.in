@@ -1,0 +1,4 @@
+exclude venv
+exclude *.pickle
+exclude resources/credentials.json
+exclude *.csv

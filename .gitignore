@@ -1,0 +1,8 @@
+.idea/
+dist/
+resources/
+scraper.egg-info
+*.pickle
+venv/
+__pycache__
+*.pyc

@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import argparse
+import os
 from scraper.scrape import main
 
 if __name__ == '__main__':
@@ -13,4 +14,9 @@ if __name__ == '__main__':
     parser.add_argument('-personal_ids_path', type=str,
                         help='file path to store personal email ids', default="./resources/personal.csv")
     args = parser.parse_args()
+    # try:
+    #     os.remove(args.business_ids_path)
+    #     os.remove(args.personal_ids_path)
+    # finally:
+    #     print("cleaned up")
     main(args.id, args.cred_file, args.known_domains_path, args.business_ids_path, args.personal_ids_path)
